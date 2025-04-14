@@ -4,8 +4,8 @@ import "./Login.css";
 import Button from "react-bootstrap/Button";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import SignINWith from "./SignINWith";
-import SignINWithFac from "./SignINWithFac";
+// import SignINWith from "./SignINWith";
+// import SignINWithFac from "./SignINWithFac";
 import { ToastContainer } from "react-toastify";
 import { handleError, handleSuccess } from "../utils/utils";
 function Login() {
@@ -114,6 +114,7 @@ const[loginInfo,setLoginInfo]=useState({
           </div>
         </div>
         <div className="d-flex justify-content-center gap-2">
+              <ToastContainer/>
           <Button variant="success" className=" mt-2 col-sm-6" type="submit">
             Login
           </Button>
@@ -127,16 +128,7 @@ const[loginInfo,setLoginInfo]=useState({
             Signup
           </Button>
         </div>
-        <p className="continue-p">-also continue with-</p>
-        <div className="d-flex col-xs-12">
-          <div className="col-xs-4">
-            <ToastContainer />
-            <SignINWith />
-          </div>
-          <div className="col-xs-4">
-            <SignINWithFac />
-          </div>
-        </div>
+     
       </Form>
     </div>
   );

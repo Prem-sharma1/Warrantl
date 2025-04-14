@@ -2,9 +2,9 @@ import React,{ useState } from "react";
 import Form from 'react-bootstrap/Form';
 import './Signup.css'
 import Button from 'react-bootstrap/esm/Button';
-import SignINWith from './SignINWith';
+// import SignINWith from './SignINWith';
 import { ToastContainer } from 'react-toastify';
-import SignINWithFac from './SignINWithFac';
+// import SignINWithFac from './SignINWithFac';
 import { handleError, handleSuccess } from "../utils/utils";
 import { useNavigate } from 'react-router-dom';
 
@@ -93,6 +93,7 @@ console.log("SignupInfo-->",signupInfo)
      
       </div>
       <div className='justify-content-center d-flex justify-content-center gap-2'>
+      <ToastContainer/>
       <Button variant="success" className=' mt-4 col-sm-6' type="submit"  onClick={handleSuccess}>SignUp</Button>
       </div>
       <p className="continue-s mt-2">
@@ -103,11 +104,11 @@ If already signup click this? <a href="/">Login</a>
       <div className='d-flex col-xs-12'>
  
  <div className='col-xs-4'>
- <ToastContainer/>
- <SignINWith />
+
+
  </div>
  <div className='col-xs-4'>
- <SignINWithFac />
+
  </div>
 </div>
 </Form>
