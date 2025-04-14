@@ -1,0 +1,15 @@
+.container{
+    width: 50%;
+  margin: 50px auto;
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 8px rgb(0,0,0,0.0065);
+}
+a {
+  color: red;                /* Text color */
+  border: none;              /* No border */
+  text-decoration: none;     /* Remove underline */
+
+
+}
